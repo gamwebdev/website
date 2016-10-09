@@ -7,32 +7,53 @@ body{    /*how to make separate boxes*/
 	background-color:#E6E6FA;
 }
 
-header {
+header{
 	width:100%;
-	background-color:#F0F8FF;
-	min-height:50px;
-} 
+	margin:0;
+	height:55px;
+	background-color:grey	;
+}
 
-.mainNav{
+header .navBar{
 	float:right;
+	display:block;
+	height:100%;
+	background-color:#2F4F4F;
+
+}
+header li {
+    list-style: none;
+    display: inline-block;
+    height: 100%;
+	margin-top:15px;
 }
 
-.mainNav li {
-	display:inline;
-	padding-right:20px;
-	font-family:arial;
-}
-
-.mainNav li a{
-	color:black;
-	text-decoration:none;
-}
-
-.mainNav li a:hover{
+header li a {
+    text-decoration: none;
+    height: 100%;
+    margin-right: 20px;
+    font-size: 1.2em;
+    display: inline-block;
 	color:white;
-	text-decoration:underline;
+
 }
 
+header li:hover{
+    background-color:green;
+		text-align:center;
+}
+
+
+ul {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+	height:100%;
+}
 
 .mainContent{
 	width:100%;
@@ -69,6 +90,21 @@ header {
 	font-family:Segoe Script;
 }
 
+.mainContent .newsBox{
+	text-align:center;
+	
+}
+
+.mainContent .newsBox .title{
+	font-family:cursive;
+	
+}
+
+.mainContent .newsBox .content p {
+    font-size: 1.3em;
+    font-family:Segoe Script;
+    line-height: 40px;
+}
 .mainContent .newsBox2{
 	position:absolute;
 	display:block;
@@ -176,18 +212,92 @@ header {
 	height:100%;
 }
 
-.mainContent .newsBox .content p {
-    font-size: 1.3em;
-    font-family: Verdana;
-    line-height: 40px;
-}
 
 .alternate{
 	display:none;
 }
 
-
-footer{
-	background-color:#B0E0E6;
-	line-height:30px;
+.dscr {
+    display: inline-block;  /*very important*/
+    text-align: center;
+    border-top: 1px solid grey;
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
 }
+
+.rows{
+	padding:50px 0px;
+	display:inline-block;
+}
+
+.row {
+    width: calc(100%/4.1);
+    float: left;
+    border-right: 1px solid grey;
+    padding-left: 5px;
+}
+
+.row h4{
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+	margin-top:10px;
+	font-size:1.2em;
+}
+
+.row p{
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+	line-height:26px;
+	font-family: cursive;
+}
+
+
+.row4{
+	border-right:0px solid grey;
+}
+/*
+.row-nthchild(3){
+	border-right:0px solid grey;
+}
+*/
+footer{
+	background-color:black;
+	line-height:30px;
+	color:white;
+	padding:10px 0;
+}
+
+.footerContainer{
+	width:100%;
+	position:relative;
+}
+
+.mainBlock{
+	width:calc(100%/3.1);
+	display:inline-block;
+	vertical-align:top;
+}
+
+.contentPart1 a{
+	color:grey;
+	text-decoration:none;
+}
+
+#menuTable li{
+	display:inline-block;
+	list-style:none;	
+	width:50%;
+	height:calc(100%/3);
+	float:left;
+}
+
+#menuTable li a{
+	text-decoration:none;
+	color:grey;
+	font-size: 1.25rem;
+}
+

@@ -28,7 +28,7 @@
 $("document").ready(function(){
 	
 	
-	$('.newsBox1').hover(function(){
+	$('.newsBox1').mousemove(function(){
 		
 		var quoteC = '<p>CRICKET peoples champioin is always a true champion so be that one</p>',
 		    quoteF = '<p> Play Like GOD Win Like A Winner </p>'
@@ -55,9 +55,12 @@ $("document").ready(function(){
 								  })
 								  .html(quoteC);
 		
-	},function(){
-		
-		$('#cric').remove();
-		
 	});
+	
+	
+	
 });
+
+	$('.newsBox1').mouseleave(function(){
+		$('#cric').remove();
+	});
